@@ -1,9 +1,9 @@
 class Node:
-    def __init__(self, info, next= None):
+    def __init__(self, info, next= None):  # Created a node , self executable contains info , next 
         self.data = info
         self.next = next
 
-class SinglyLinkedList:
+class SinglyLinkedList:              # Created singly linked list , first put head, then perform operation of insertin 
     def __init__(self, head=None):
         self.head = head
 
@@ -17,7 +17,7 @@ class SinglyLinkedList:
         else:
             self.head = temp
 
-    def printLinkedList(self):
+    def printLinkedList(self):        # function to print the linked list 
         t1 = self.head
         while(t1.next != None):
             print(t1.data)
