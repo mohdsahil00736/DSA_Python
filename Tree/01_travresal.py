@@ -31,7 +31,6 @@ root.left.right = Node(4)
 root.right.left = Node(7)
 root.right.right = Node(9)
 
-
 print("\n Inorder -----")
 Inorder(root)
 print("\n PreOrder ----")
