@@ -7,7 +7,7 @@ class graph:
     def add_graph(self, src, dest):
         if(0<= src < self.size and  0<= dest < self.size):
             self.mat[src][dest] = 1   # for the Dericted graph only one way 
-            # self.mat[dest][src] = 1  # for the undericted graph both way 
+            self.mat[dest][src] = 1  # for the undericted graph both way 
             # self.mat[src][dest] = weight     # for the weighted graph
         else: 
             print("invalid Graph")
@@ -17,7 +17,7 @@ class graph:
             print(' '.join(map(str, row)))
 
 
-G = graph(3)
+G = graph(4)
 G.add_graph(0,1)
 G.add_graph(0,2)
 # G.add_graph(2,1)
